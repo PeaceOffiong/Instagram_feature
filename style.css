@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Smooch&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px ; 
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    width: 310px;
+    background-color: black;
+}
+
+.stories{
+    display: flex;
+    align-items: center;
+}
+
+.Each-story{
+    margin: 0 4px;
+}
+
+p{
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+small{
+    color: white;
+}
+
+.likes-picture{
+    clip-path: circle();
+    height: 25px;
+}
+
+.likes{
+    margin: 4px 0;
+    align-items: center;
+    display: flex;
+
+}
+
+.caption > .captioning{
+    display: flex;
+    justify-content: flex-start;
+    margin: 3px 6px ;
+}
+
+.person{
+    font-weight: bolder;
+    font-size: 11px;
+}
+
+.p{
+    margin: 0 5px;
+}
+
+i{
+    color: white;
+    margin: 5px;
+    margin-top: 10px;
+
+}
+
+h3{
+    color: white;
+    font-family: "Pacifico";
+    padding: 0 1px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin:3px;
+}
+
+img{
+    border-radius: 50%;
+    height: 50px;
+    width: 45px;
+}
+
+.notification{
+    height: 35px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.viewed{
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    padding: 3px;
+    height: 55px;
+    width: 55px;
+}
+
+.me{
+    position: relative;
+    width: 55px;
+}
+
+#comment1{
+    margin : 0 10px;
+}
+
+.me::before{
+    background-color: blue;
+    height: 5px;
+    width: 5px;
+}
+
+.img{
+    background-image: url("/CNEM4759.JPG");
+    background-position: center center;
+    background-size: cover;
+    height: 450px;
+    width: 310px;
+    position: relative;
+}
+
+.love{
+    position: absolute;
+    height: 70px;
+    width: 40px;
+    background-color: white;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(45deg) scale(0);
+    z-index: 2;
+    animation: heart 1.3s ease-out 1;
+    opacity: 10;
+    margin-top : 60px;
+}
+
+.love::before{
+    content: "";
+        position: absolute;
+        background: white;
+        height: 70px;
+        width: 40px;
+        transform: rotate(-90deg);
+        border-radius: 200px 200px 0 0;
+        left: -15px;
+        top: 15px;
+}
+
+.heart2 {
+    position: absolute;
+        height: 17px;
+        width: 10px;
+        background-color: white;
+        border-radius: 200px 200px 0 0;
+        transform: rotate(45deg);
+        opacity: 10;
+        margin: 10px 20px;
+}
+
+.heart2::before {
+    content: "";
+        position: absolute;
+        background: white;
+        height: 17px;
+        width: 10px;
+        transform: rotate(-90deg);
+        border-radius: 200px 200px 0 0;
+        left: -3px;
+        top: 3px;
+}
+
+.fa-comment{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.fa-paper-plane{
+    margin: 0 5px;
+}
+
+@keyframes heart {
+
+    50%{
+        opacity: 10;
+        transform: rotate(45deg) scale(0.50);
+    }
+
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) scale(1)
+        /* transform: translate(-50%, -50%) scale(2.5); */
+    }
+}
